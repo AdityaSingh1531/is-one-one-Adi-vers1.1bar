@@ -74,7 +74,7 @@ def main():
         is_one_using_roman_numerals,
     ]
   
-    print("🧠 Running overengineered checks to see if 1 == 1:\n")
+    print("🧠 Running overengineered ccd hecks to see if 1 == 1:\n")
   
     for i, func in enumerate(checks, 1):
         try:
