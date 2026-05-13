@@ -44,6 +44,10 @@ def is_one_using_quantum_mechanics():
     # 15 lines of matrix multiplication that 
     # always results in the identity matrix
     return True
+    
+def is_one_using_indian_parents_expectations():
+    expected_rank = 1
+    return expected_rank == 1
 ```
 Please **do not** write smart or clean code. We don’t do that here.
 
