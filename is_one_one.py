@@ -5,6 +5,14 @@ def is_one():
     """Validates one through direct equality."""
     return 1 == 1
 
+def is_number_one(value: int) -> bool:
+    """The one function that actually takes an argument.
+
+    Returns True if ``value`` equals 1, False otherwise.
+    Useful for negative testing — finally, a function that can return False!
+    """
+    return value == 1
+
 def is_one_unicode_distance():
     """Calculates one from adjacent Unicode code points."""
     return ord("b") - ord("a") == 1
@@ -71,6 +79,35 @@ def is_one_using_roman_numerals():
         total+= roman_values[char]
     return total == 1
 
+def the_one_suriya():
+    greatest_actor="suriya"
+    the_legend="suriya"
+    the_handsome="suriya"
+    great_man="suriya"
+    humble_man="suriya"
+    suriya=1
+    return suriya
+
+def is_one_using_vector_magnitude():
+    """Verifies that the magnitude of a unit vector is one"""
+    import numpy as np
+    import random
+    while True:
+        x_component = random.randint(-100, 100)
+        y_component = random.randint(-100, 100)
+        if x_component != 0 or y_component != 0:
+            break
+    v = np.array([x_component, y_component])
+    magnitude = np.linalg.norm(v)
+    v_hat = v / magnitude
+    if np.linalg.norm(v_hat) == 1:
+        return True
+    return False
+  
+def Anik_one(a):
+    a=100/100
+    return bool(a) # cause you cant deny facts
+
 def is_one_just_to_be_sure():
     """Verifies one by aggregating every proof."""
     return all([
@@ -82,26 +119,9 @@ def is_one_just_to_be_sure():
         is_one_using_interdimensional_tax_fraud(),
         is_one_using_roman_numerals(),
         is_one_under_extreme_pressure(),
+        the_one_suriya(),
+        is_one_using_vector_magnitude(),
     ])
-def Anik_one(a):
-    a=100/100
-    return bool(a) # cause you cant deny facts
-def is_number_one(value: int) -> bool:
-    """The one function that actually takes an argument.
-
-    Returns True if ``value`` equals 1, False otherwise.
-    Useful for negative testing — finally, a function that can return False!
-    """
-    return value == 1
-
-def the_one_suriya():
-    greatest_actor="suriya"
-    the_legend="suriya"
-    the_handsome="suriya"
-    great_man="suriya"
-    humble_man="suriya"
-    suriya=1
-    return suriya
 
 def main():
     """Runs all available one verification functions."""
@@ -115,6 +135,8 @@ def main():
         is_one_using_roman_numerals,
         is_one_using_interdimensional_tax_fraud,
         is_one_under_extreme_pressure,
+        the_one_suriya,
+        is_one_using_vector_magnitude,
     ]
   
     print("🧠 Running overengineered checks to see if 1 == 1:\n")
